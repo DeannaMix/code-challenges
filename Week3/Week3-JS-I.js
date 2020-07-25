@@ -1,9 +1,9 @@
-"use strict";
+// "use strict";
 
 //In these first 6 questions, replace `null` with the answer
 
 //1. create a string variable, it can contain anything
-const newString = "Deanna Mix";
+const newString = 'Deanna Mix';
 
 //2. create a number variable, it an be any number
 const newNum = 5;
@@ -43,7 +43,7 @@ function add(x, y) {
 function subtract(x, y) {
   // subtract y from x and return the value
   // code here
-  return y - x;
+  return x - y;
 }
 
 // 10
@@ -120,7 +120,7 @@ function isEven(num) {
   // return true if num is even
   // otherwise return false
   // code here
-  if (num%2 == 0) {
+  if (num%2 === 0) {
     return true;
   } else
 		return false;
@@ -131,7 +131,7 @@ function isOdd(num) {
   // return true if num is odd
   // otherwise return false
   // code here
-  if (num%1 == 0) {
+  if (num%2 !== 0) {
     return true;
   } else
     return false;
@@ -178,7 +178,7 @@ function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
-  return 'Hello world' + '!';
+  return str + '!';
 }
 
 // 25
@@ -186,8 +186,7 @@ function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'NSS', 'Bootcamp' -> 'NSS Bootcamp'
   // code here
-  let combineNames = 'NSS' + ' ' + 'Bootcamp';
-  return combineNames;
+  return firstName + ' ' + lastName;
 }
 
 // 26
